@@ -39,7 +39,7 @@ intents = discord.Intents.all()
 bot = commands.AutoShardedBot(intents=intents, command_prefix=commands.when_mentioned_or("nexus$"))
 tree = bot.tree
 token = os.getenv("DSC_TOKEN")
-ownerid = os.getenv("OWNER_ID")
+ownerid = int(os.getenv("OWNER_ID"))
 
 @bot.event
 async def on_ready():
