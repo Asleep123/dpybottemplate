@@ -36,7 +36,7 @@ class Color:
     CONCEALED = "\033[8m"
 
 intents = discord.Intents.all()
-bot = commands.AutoShardedBot(intents=intents, command_prefix=commands.when_mentioned_or("nexus$"))
+bot = commands.AutoShardedBot(intents=intents, command_prefix=commands.when_mentioned_or("bot$"))
 tree = bot.tree
 token = os.getenv("DSC_TOKEN")
 ownerid = int(os.getenv("OWNER_ID"))
